@@ -1,0 +1,26 @@
+.img_listProduct_admin_pushChange{
+    font-weight: 600;
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #495974;
+  
+  
+
+  
+}
+.hv_color_detail{
+    color: white;
+}
+.hv_color_detail:hover{
+    color: black;
+}
+.bg_color_btnProduct{
+    background-color: rgb(11, 223, 145);
+    color: white;
+    font-weight: 500;
+}
+.title_RowTable{
+    font-size: 17px;
+}

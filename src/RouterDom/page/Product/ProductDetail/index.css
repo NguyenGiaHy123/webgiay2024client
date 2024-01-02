@@ -1,0 +1,33 @@
+.ground-product-detail{
+    padding-left: 290px;
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+     
+}
+.ground-inForProduct-content{
+  
+    width: 95%;
+
+    margin: auto;
+}
+.ground-inForProduct-content .group-link{
+    display: flex;
+    gap:0.3rem;
+    margin-top: 5px;
+}
+.ground-inForProduct-content .group-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: initial; 
+}
+.ground-product-detail{
+    background-color: #f0f2f5cd;
+}
+@media screen and (max-width:1000px) {
+    .ground-product-detail{
+        padding: 0px;
+    }
+    
+}

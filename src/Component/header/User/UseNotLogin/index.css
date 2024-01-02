@@ -1,0 +1,13 @@
+.group-sign a:last-child{
+    border: solid 0.4px rgba(220, 220, 220, 0.214);
+    background: rgba(245, 245, 220, 0.179);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+
+}
+@media screen and (max-width:1300px) {
+    .group-sign a:last-child{
+        display: none;
+    }
+    
+}

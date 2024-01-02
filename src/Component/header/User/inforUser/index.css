@@ -1,0 +1,195 @@
+.avatarUserHeader{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.groupImageUser{
+    border-radius: 50px;
+    background-color: rgba(240, 248, 255, 0.215);
+    display: inline-block;
+    padding: 3px;
+    display: flex;
+    width: auto;
+}
+.group_name_user{
+    display: block;
+}
+.detailUser{
+    position: fixed;
+     background-color: #05042c;
+     width: 350px;
+     height: 100%;
+    
+     top: 0px;
+     right:-200%;
+     transition: 0.2s ease-in-out;
+    }
+.iconCloseUser{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 17px;
+}
+.detailUser.open{
+ 
+    right: 0px;
+}
+.detailUser{
+    font-weight: 500;
+    list-style: none;
+    text-decoration: none ;
+
+    cursor: pointer;
+}
+.detailUser_img_detailUser_name{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding-top:1rem ;
+    line-height: 28px;
+    margin: 0px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detailUser_header_profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:13px;
+    font-size: 14px;
+    line-height: 14px;
+    column-gap: 3px;
+    background-color: rgb(76, 33, 0);
+    color: rgb(255, 236, 158);
+    padding-top: 15px;
+
+    
+   
+}
+.Group_detailUser_img_detailUser{
+    padding: 24px 10px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(28, 45, 56);
+    color: #ffffff;
+    max-width: 100%;
+    border-bottom: solid 0.2px rgba(255, 255, 255, 0.221);
+}
+
+.detailUser_img_detailUser{
+    position: relative;
+
+}
+.detailUser_img_detailUser .img_user{
+ width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   border: solid 0.5px rgba(255, 255, 255, 0.318);
+}
+
+.iconUserUpload{
+    position: absolute;
+    font-size: 30px;
+    right: 5px;
+    bottom: -5px;
+    color: rgba(255, 255, 255, 0.893);
+    cursor: pointer;
+    box-shadow: 0px 1px 2px black;
+}
+.group_name_edit{
+    display: flex;
+    align-items: center;
+}
+
+.detailUser_Information_box{
+    display: flex;
+    align-items: center;
+    padding:0px 10px;
+    width: 100%;
+    min-height: 40px;
+}  
+.group_name_edit{
+
+    width: 100%;
+    position: relative;
+}
+.group_name_edit .icon_name_user{
+    position: absolute;
+    text-align: right;
+    right: 0px;
+}
+.icon{
+    font-size: 18px;
+    margin-right: 8px;
+
+}
+
+.buttomGroup  button{
+     background-color: #ffffff;
+     color: black;
+     padding: 3px;
+     color: white;
+     font-weight: 500;
+     padding: 5px 10px;
+     border-radius: 5px;
+}
+.buttomGroup{
+    display: flex;
+    column-gap: 10px;
+}
+.buttomGroup button:last-child{
+    background-color: #3498db;
+    height: 35px;
+} 
+.buttomGroup button:first-child{
+    background-color: #c0392b;
+    height: 35px;
+}
+.group_name_edit form{
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+}
+
+.detailUser_group_name_information .icon{
+    position: absolute;
+    text-align: right;
+}
+
+.detailUser_group_name_user{
+    display: flex;
+    align-items: center;
+}
+
+.detailUser_Information{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem 0px;
+}
+.description{
+    padding: 1rem;
+    background-color:#ffffff ;
+}
+
+@media screen and (max-width:1300px) {
+   
+    .group_name_user{
+        display: none;
+    }
+    .groupImageUser{
+        background-color:initial;
+    }
+    .avatarUserHeader{
+        width: 60px;
+        height: 60px;
+    }
+}

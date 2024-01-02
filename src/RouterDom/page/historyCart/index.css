@@ -1,0 +1,130 @@
+.group-history_cart{
+    padding-left: 290px;
+    width: 100%;
+}
+.box{
+    width: 90%;
+    margin: auto;
+    
+}
+.boderstyle_history{
+    border: solid 0.4px rgba(255, 119, 0, 0.214);
+}
+.bg_group_header_history{
+    background-color: #f4983c2a;
+    padding: 13px 16px;
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #d9d9d9;
+    display: -moz-box;
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.group_table_history_cart table td,tr,th  {
+    border: 0.5px solid rgb(206, 203, 203) !important;
+    text-align: center;
+  }
+  
+  .group_table_history_cart  table {
+    width: 100%;
+    border-collapse: collapse;
+   
+  }
+  .img_table_historyCart{
+    margin: auto;
+    
+  }
+  
+.bg_SuccessCart{
+  background-color: orange;
+  color: white;
+
+}
+.bg_update{
+    background-color: #0d9488;
+}
+.bg_cancer_order{
+    background-color: #b2082a;
+}
+.bg_cancer_order1{
+    background-color: #007f11d1;
+}
+.bg_cancer1{
+    background-color:rgb(224, 7, 7) ;
+}
+
+ .track-header{
+    background-color: #f5f5f5;
+    padding: 13px 16px;
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #d9d9d9;
+    display: -moz-box;
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+ } 
+
+ .btn_bg_delete{
+    background-color: rgb(15, 2, 77);
+    color: white;
+ }
+ .btn_bg_delete:hover{
+    color: white;
+ }
+ .tracking-label{
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+    font-weight: 700;
+    display: -moz-box;
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+ }
+.fix_max_width{
+    font-size: 1.2em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #000;
+    margin: auto;
+    font-weight: initial;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.2s ease-out;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px)  {
+    .group-history_cart{
+        padding-left: 0px;
+    }
+    .box{
+        width: 100%;
+       
+    }
+    .group-buttonAll_cart_history {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+
+    }
+    .group-buttonAll_cart_history button{
+        display: flex;
+        justify-content: center;
+    }
+}

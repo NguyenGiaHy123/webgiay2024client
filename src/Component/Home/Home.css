@@ -1,0 +1,22 @@
+.group-home{
+    padding-left: 290px;
+    overflow: hidden;
+
+}
+.group-home .home{
+    max-width: 95%;
+    margin: auto;
+}
+
+@media screen and (max-width:1000px) {
+    .group-home{
+        padding-left: 0px;
+    
+    }
+    .group-home .home{
+        max-width: 100%;
+        margin: 0px;
+
+    }
+    
+}

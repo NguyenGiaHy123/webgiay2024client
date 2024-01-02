@@ -1,0 +1,83 @@
+.ground-content-product{
+    background-color: whitesmoke;
+  
+    box-shadow: 0 1px 6px rgb(226, 224, 227);
+    min-height: 100px;
+    border: solid 0.2px gainsboro;
+    width: 100%;
+    position: relative;
+    
+}
+.ground-content-product textarea{
+    width: 100%;
+    border: solid 1px black;
+}
+
+.ant-avatar-image img{
+    width: 70px !important;
+    height: 70px !important;
+}
+.imgComment{
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+  
+    padding: 2px !important;
+    border: solid 0.5px gainsboro !important;
+}
+.btnComment{
+    background-color: rgb(0, 170, 255);
+    padding: 10px;
+    width: 150px !important;
+    height: 50px !important;
+    margin-left: 3rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.groundAvater-rating{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+.ground-information-img{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+.ground-writeComment path {
+    stroke: rgb(254, 211, 48);
+    stroke-width: 3px;
+}
+.color-time-comment{
+    color: gray;
+}
+.content-button{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 1rem;
+}
+.btnComment{
+    background-color: rgb(0, 170, 255);
+    width: 180px;
+    height: 20px;
+    font-weight: 500;
+    color:white;
+}
+.ant-comment-inner {
+ 
+    padding: 0px !important;
+}
+
+.ground-comment-padding{
+    padding:0px !important;
+    
+    padding-right: 20px !important;
+}
+.contentForm-comment{
+    margin-left: -15px;
+    
+}

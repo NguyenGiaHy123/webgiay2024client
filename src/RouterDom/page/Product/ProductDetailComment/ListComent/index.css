@@ -1,0 +1,103 @@
+.list-customComment{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-top: 2rem;
+}
+.items-comment-avatar{
+    
+    display: flex;
+}
+
+.items-comment-avatar .avatarPost{
+   
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.items-comment-avatar .items-comment-name{
+    
+  
+    flex-direction: column;
+    background-color: #f0f2f5cd;
+    padding: 0.5rem;
+    padding-top: 0.2px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+
+
+}
+.items-comment-avatar .items-comment-name p{
+  margin-bottom: 0px;
+    
+}
+.tittle-items-comment{
+    font-size: 16px;
+    font-weight: 500;
+}
+.timeComment{
+    color: rgb(236, 16, 16);
+    /* display-inline block :khong cho trai dai ra */
+    display: inline-block;
+
+ 
+}
+.admin{
+  background-color: rgb(0, 174, 255);
+  display: inline-block;
+  padding: 0px 0.5rem;
+  
+  color: white;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+.ground-admin{
+    margin-bottom: 1rem;
+}
+.ground-reply-icon{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: gray;
+    cursor: pointer;
+}
+.box_reply{
+    border: solid 0.2px gainsboro;
+    display: flex;
+  
+    
+}
+.group_content_all_reply{
+
+    width: 100%;
+}
+.textLoadComent{
+    text-decoration: underline;
+    font-size: 19px;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    background-color: rgb(233, 233, 233);
+    text-decoration: none;
+    border: none;
+    color: rgb(0, 153, 255);
+
+    
+}
+
+.group_edit_delete_comment .edit:hover{
+    background-color: rgb(230, 234, 237);
+}
+
+.group_edit_delete_comment .delete:hover{
+    background-color: rgb(230, 234, 237);
+}
+
+.group_title_delete_edit_replyComment{
+    
+}
+.group_grip_reply_comment{
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+}

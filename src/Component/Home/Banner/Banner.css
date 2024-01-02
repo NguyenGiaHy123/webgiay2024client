@@ -1,0 +1,62 @@
+@font-face {
+    font-family: MyriadProCondensed;
+    src: url(../../../../public/fonts/MyriadProCondensed/MyriadProCondensed.ttf);
+}
+
+@font-face {
+    font-family: BerlinSansFBDemiBold;
+    src: url(../../../../public/fonts/BerlinSansFBDemiBold/BerlinSansFBDemiBold.ttf);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+ 
+  
+  .SwiperSlideContent{
+     width: 100%;
+    
+  
+     position: relative;
+  }
+  .SwiperSlideContent img{
+
+  width: 100%;
+height: 80vh;
+  
+   
+  }
+
+  @media screen and (max-width:736px) {
+    .SwiperSlideContent img{
+  
+    min-height: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+      width: auto;
+    }
+    
+  }

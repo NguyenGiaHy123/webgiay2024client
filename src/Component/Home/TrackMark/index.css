@@ -1,0 +1,86 @@
+@font-face {
+    font-family: MyriadProCondensed;
+    src: url(../../../../public/fonts/MyriadProCondensed/MyriadProCondensed.ttf);
+}
+
+@font-face {
+    font-family: BerlinSansFBDemiBold;
+    src: url(../../../../public/fonts/BerlinSansFBDemiBold/BerlinSansFBDemiBold.ttf);
+}
+
+.ground-trackMark{
+    background-color: whitesmoke;
+    margin-top: 2rem;
+    box-shadow: 0 1px 6px rgb(226, 224, 227);
+    min-height: 500px;
+    border: solid 0.2px gainsboro;
+}
+.ground-trackMark h3{
+    font-size: 25px;
+    color: rgb(7, 41, 51);
+    font-weight: bold;
+    padding: 1rem;
+    letter-spacing: 5px;
+    font-family:MyriadProCondensed ;
+}
+.list-trackMark{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    
+
+    max-width: 900px;
+    margin: auto;
+   gap :1rem;
+    padding: 2rem 0px;
+}
+.list-trackMark >li {
+  margin: auto;
+    position: relative;
+    width: 220px;
+    min-height: 150px;
+    background-color: white;
+    box-shadow: 0 1px 6px rgb(206, 206, 206);
+   
+    
+}
+.list-trackMark >li:hover{
+    border: solid 0.5px gainsboro;
+
+}
+.list-trackMark >li >a>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    transition: ease-in-out 0.2s ;
+}
+.list-trackMark >li >a>img:hover{
+    padding: 1.5rem;
+}
+
+@media screen and (max-width:1189px) {
+    .list-trackMark{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+
+@media screen and (max-width:654px) {
+    .list-trackMark{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    
+}
+
+@media screen and (max-width:463px) {
+    .list-trackMark{
+        gap: 0px;
+        padding-left:0px ;
+        padding-right: 0px;
+        
+    }
+    
+}
+

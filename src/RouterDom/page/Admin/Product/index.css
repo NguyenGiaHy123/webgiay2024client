@@ -1,0 +1,81 @@
+.group-product-admin{
+padding-left: 290px;
+background-color: rgba(0,0,0,0.05);
+overflow: hidden;
+min-height: 60vh;
+margin-bottom:2rem ;
+padding-bottom: 2rem;
+}
+.group-product-admin .group-product-admin-title{
+max-width: 95%;
+margin: auto;
+display: flex; 
+column-gap: 1.5rem;
+line-height: 10px;
+padding-top: 1rem;
+margin-bottom: 3rem;
+align-items: center;
+}
+
+.img_menu_admin_product{
+    width: 50px;
+    height: 50px;
+}
+.cl-titleProduct{
+    color: #495974;
+}
+.group-product-admin-addProduct-content{
+   
+    width: 95%;
+    background-color: rgba(254, 254, 254, 0.83);
+    box-shadow: 0 1px 6px rgb(226, 224, 227);
+    min-height: 100px;
+    border: solid 0.2px gainsboro;
+    margin: auto;
+    padding: 1rem;
+}
+.tag-color{
+    font-weight: bold;
+}
+
+.ck-content {
+    min-height: 30vh !important;
+}
+.input-color{
+   height: 40px;
+}
+.site-tag-plus{
+    width: 150px;
+    height: 30px;
+}
+.itemFormsubmit{
+    width: 100%;
+   
+ 
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.btn_submit{
+    background-color: #06b7df00;
+    color:#11839dbf;
+    font-weight: 500;
+    border: solid 1px #047b96bf;
+}
+
+@media screen and (max-width:1000px) {
+.group-product-admin{
+    padding-left: 0px;
+}
+.group-product-admin .group-product-admin-title{
+    max-width: 100%;
+    margin: 0px;
+}
+.group-product-admin-title{
+    width: 95%;
+    margin: auto;
+  
+    padding: 1.5rem;
+}
+
+}

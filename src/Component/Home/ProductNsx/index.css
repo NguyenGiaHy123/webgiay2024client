@@ -1,0 +1,25 @@
+.group-product-nsx{
+    padding-left: 290px;
+    width: 100%;
+}
+.product-nsx{
+    width: 92%;
+    margin: auto;
+}
+.width_form_antd_select{
+    width: 300px;
+   margin-left: auto;
+   padding-right: 25px;
+   margin-bottom: -20px;
+}
+@media screen and (max-width:1000px) {
+    .group-product-nsx{
+        padding: 0px;
+    }
+    .product-nsx{
+        width: auto;
+        margin: auto;
+    }
+    
+}
+    

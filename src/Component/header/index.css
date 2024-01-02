@@ -1,0 +1,141 @@
+@font-face {
+    font-family: MyriadProCondensed;
+    src: url(../../../public/fonts/MyriadProCondensed/MyriadProCondensed.ttf);
+}
+
+@font-face {
+    font-family: BerlinSansFBDemiBold;
+    src: url(../../../public/fonts/BerlinSansFBDemiBold/BerlinSansFBDemiBold.ttf);
+}
+
+.ground-header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    background-color: #05042c;
+    height: 80px;
+    color: white;
+    z-index: 200;
+}
+.ground-header .header-main{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns:17% 60% 5% 18%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.ground-header .header-main .toggle-menu i{
+    color: white;
+
+}
+
+/*logo*/
+.ground-header .header-main .header-main_logo a{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+
+.ground-header .header-main .header-main_logo a span{
+    color: rgb(3, 201, 215);
+}
+
+.ground-header .header-main .header-main_logo a  {
+    line-height: 50px;
+    display: inline-block;
+    position: relative;
+    padding: 0 30px;
+    font-family: BerlinSansFBDemiBold;
+    transition: all 0.3s ease-in-out;
+}
+
+.ground-header .header-main .header-main_logo a ::before,
+
+.ground-header .header-main .header-main_logo a ::after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+}
+
+.ground-header .header-main .header-main_logo a ::after {
+    left: 0;
+    top: 0;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+}
+
+.ground-header .header-main .header-main_logo a ::before {
+    border-right: 4px solid #06b8df;
+    border-bottom: 4px solid #06b8df;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/*animation*/
+
+/*toggle menu*/
+.ground-header .header-main .toggle-menu {
+	display: none;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+
+/*responssive*/
+@media screen and (max-width:1300px) {
+   
+    .ground-header .header-main{
+     
+        grid-template-columns: 30% 50% 10% 10%;
+    }
+}
+
+@media screen and (max-width:1036px) {
+    .ground-header .header-main .header-main_logo a{
+       font-size: 30px;
+      
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .ground-header .header-main .header-main_logo {
+        /* chiem khoan cach tu cot 3 den co bon cot 4 */
+        grid-column: 3/4;
+  
+    }
+    .ground-header .header-main .header-main_logo a span{
+        font-size: 20px;
+     
+    }
+    .ground-header .header-main .header-main_logo a{
+        padding: 5px;
+    }
+    .ground-header .header-main .toggle-menu {
+        display: block;
+        grid-column:2/3;
+        grid-row: 1/2;
+    }
+    .ground-header .header-main{
+     
+        display: grid;
+	
+		grid-template-columns: 20% 10% 34%  17% 17%;
+		
+    }
+    .ground-header .header-main{
+        padding-top:1% ;
+    }
+   
+}
+

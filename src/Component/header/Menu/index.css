@@ -1,0 +1,196 @@
+.ground-menu{
+   background-color: white;
+   position: fixed;
+   top: 70px;
+   left: 0px;
+   z-index: 111;
+   width: 290px;
+   height: 100%;
+   overflow-y: overlay;
+   overflow-x: hidden;
+   transition: 0.2s ease-in-out;
+   box-shadow: 0 0 11px rgba(33, 33, 33, 0.278);
+}
+.ground-menu .menu {
+    line-height: 50px;
+    padding-left: 1rem;
+}
+
+.ground-menu::-webkit-scrollbar-track{
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.ground-menu::-webkit-scrollbar{
+    display: none;
+    width: 4px;
+}
+.ground-menu:hover::-webkit-scrollbar{
+    display: block;    
+}
+.ground-menu::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-image: linear-gradient(-45deg,rgba(16, 213, 248, 0.823), rgb(232, 231, 231));
+}
+
+
+.ground-menu nav .menu{
+    position: relative;
+    z-index: 10;
+    padding: 25px;
+}
+.ground-menu nav .menu >li{
+  
+    position: relative;
+     list-style: none;
+
+}
+
+
+.ground-menu nav .menu > li > a {
+    font-size: 18px;
+    display: flex;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-left: 30px;
+    color: #4a5568;
+    cursor: pointer;
+    border-radius: 10px; 
+    align-items: center;
+    text-decoration: none;
+}
+
+.ground-menu nav .menu > li > a .logo img{
+    width: 35px;
+	height: 35px;
+    margin-top: -5px;
+    margin-right: 2rem;
+}
+.ground-menu nav .menu > li > a i.fa-caret-down{
+    position: absolute;
+    right: 10px;
+    transform: rotate(0deg);
+    transition: 0.2s ease-in-out;
+}
+
+.ground-menu nav .menu > li:hover a i.fa-caret-down{
+    color: rgb(0, 195, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.ground-menu nav .menu >li:hover > a:not(.active) {
+    color: rgb(0, 195, 255);
+    transition: ease-in-out 0.2s;
+}
+
+
+
+.submenu{
+    
+   transition: all 0.3s ease-in-out;
+   overflow: hidden;
+   display: block;
+   position: relative;
+   max-height: 0px;
+   padding-left: 12px;
+   border-left: solid 1px rgb(202, 202, 202);
+   
+}
+.ground-menu nav .menu >li >ul >li{
+    list-style: none;
+
+}
+
+.ground-menu nav .menu >li >ul>li a{
+    color: black;
+    text-decoration: none;
+  
+}
+
+.ground-menu nav .menu >li >ul{
+    line-height: 45px;
+    
+}
+.submenu li a{
+    font-size: 16px;
+    color:#4a5568 ;
+    text-transform: capitalize;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    display: block;
+    font-weight: initial !important;
+   
+}
+.submenu li a:hover{
+    transform: translateX(15px);
+    color:red !important ;
+    
+}
+.ground-menu nav .menu > li.nav-item:hover >a{
+    background-color: rgba(237, 237, 237, 0.842);
+    color: black;
+}
+.ground-menu nav .menu > li.nav-item.open .submenu{
+   max-height: 100vh;
+   transition: all ease-in-out 0.3s;
+}
+.ground-menu nav .menu > li.nav-item.open >a i{
+    transform: rotate(180deg);
+
+}
+.ground-menu nav .menu > li.nav-item:hover >a i{
+    
+    color: black;
+}
+
+.ground-menu nav .menu >li.nav-item.open >a{
+    background-color:rgba(237, 237, 237, 0.842);
+    color: black;
+}
+
+.menu .nav-items.active{
+    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(237, 237, 237, 0.842)
+    ;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 4px rgba(33, 33, 33, 0.219);
+    border: solid 0.5px rgba(128, 128, 128, 0.03);
+    margin-top: 2rem;
+
+}
+.menu .nav-items.active i{
+    font-size: 30px;
+    margin-left: 15px;
+    background-color: #05042c;
+    color: white;
+    padding: 0px 8px;
+    border-radius: 20%;
+}
+.menu .nav-items.active a{
+    list-style: none;
+    font-size: 23px;
+    font-weight: 500;
+    color: #05042c;
+    text-decoration: none;
+  
+}
+
+
+@media screen and (max-width:1000px) {
+    .ground-menu{
+        left: -300px;
+        top: 0px;
+    }
+}
+
+.ground-menu.open{
+    left: 0px;
+    top: 70px;
+}

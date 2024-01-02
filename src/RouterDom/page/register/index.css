@@ -1,0 +1,51 @@
+.ground-login .wrapper-register{
+   max-width: 800px;
+   width: 100%;
+   min-height: 400px;
+   height: 100%;
+   background-color: white;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   z-index:105;
+   border: solid 0.5px rgba(0, 0, 0, 0.175);
+   
+}
+.form-content-login .form-group {
+ 
+    height: initial;
+
+}
+.form-content-login{
+    padding: 1rem;
+}
+.ground-login .wrapper-register img{
+    width: 100%;
+    min-height: 350px;
+    height: 100%;
+   
+ 
+  
+}
+.form-content-login h2{
+    margin-bottom: 2rem;
+    font-weight: bold;
+
+}
+.ground-login .wrapper-register p{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.753);
+    font-weight: 500;
+}
+.loginbtn{
+    background-color: rgb(15, 19, 19);
+}
+@media screen  and (max-width:1000px){
+    .ground-login .wrapper-register img{
+        display: none;
+    }
+    .ground-login .wrapper-register{
+        max-width: 500px;
+        grid-template-columns: 100% ;
+    }
+    
+}

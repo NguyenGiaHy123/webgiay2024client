@@ -1,0 +1,28 @@
+.group_search{
+    padding-left: 290px;
+    width: 100%;
+    
+}
+.group_search_Product{
+    padding-left: 290px;
+    width: 100%;
+}
+.box_search{
+    width: 95%;
+    margin: auto;
+}
+@media screen and (max-width:1000px) {
+    .group_search{
+        padding-left: 0px;
+        width: 100%;
+    }
+    .box_search{
+        width: 98%;
+        margin: auto;
+    }
+
+    .group_search_Product{
+        padding-left: 0px;
+        width: 100%;
+    }
+}

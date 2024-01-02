@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "esnext",
+      "jsx": "react",
+      "strict": true,
+      "esModuleInterop": true,
+      // phải thêm dòng này vào file tsconfig.json mới fix đc lỗi  not find mui/material"
+      "moduleResolution": "node",
+      "allowJs": true,
+      "outDir": "build",
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "build/**/*"]
+    
+}

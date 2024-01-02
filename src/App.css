@@ -1,0 +1,347 @@
+
+/*  flex-row flex-col d-flex  gap-0 gap-x-0	
+gap-y-0
+*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: MyriadProCondensed;
+    src: url(../public/fonts/MyriadProCondensed/MyriadProCondensed.ttf);
+}
+
+@font-face {
+    font-family: BerlinSansFBDemiBold;
+    src: url(../public/fonts/BerlinSansFBDemiBold/BerlinSansFBDemiBold.ttf);
+}
+/*dung chung cho trang product*/
+.title{
+    font-size: 25px;
+    color: #4a5568;
+    font-weight: bold;
+    padding: 1rem;
+    letter-spacing: 5px;
+    font-family:MyriadProCondensed ;
+}
+.title1{
+    font-size: 25px;
+    color: #4a5568;
+    font-weight: 500;
+    padding: 0px;
+
+
+}
+/* box */
+.ground-content-product{
+    background-color: whitesmoke;
+    margin-top: 1rem;
+    box-shadow: 0 1px 6px rgb(226, 224, 227);
+    min-height: 100px;
+    border: solid 0.2px gainsboro;
+}
+.ground-writeComment{
+    background-color: white;
+    margin-top: 3rem;
+    box-shadow: 0 1px 6px rgba(226, 224, 227, 0.111);
+    min-height: 100px;
+    border: solid 0.2px gainsboro;
+   padding:2rem ;
+    border-radius: 10px;
+   
+}
+/* vien star rating */
+.start_product_review path {
+    stroke: rgb(254, 211, 48);
+    stroke-width: 3px;
+}
+/**/
+.active-before{
+    background-color: rgb(5 5 5/80%);
+    position: fixed;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index:110;
+}
+
+.active-before-fullscreen{
+    position: fixed;
+    background-color: rgb(5 5 5/80%);
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+
+.product_item_card{
+    position: relative;
+}
+.product_item_card_favorite{
+    position: absolute;
+    top:10px ;
+    left: -3px;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(244, 94, 39);
+    color: white;
+    align-items: center;
+    padding-right: 5px;
+    border-top-right-radius:3px ;
+    border-bottom-right-radius: 3px;
+}
+.product_item_card_favorite::after{
+    content:"" ;
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    border-top: 3px solid rgb(153, 51, 13);
+    border-left: 3px solid transparent;
+}
+.icon_product_card_favorite{
+    margin: 0px 4px;
+}
+
+.homeItems_sale-off{
+    position: absolute;
+    top: 0px;
+    padding: 5px;
+    right: 0px;
+    display: flex;
+    width: 60px;
+    text-align: center;
+   background-color: rgba(255,216,64,0.94);
+    flex-direction: column;
+}
+.homeItems_sale-off::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   border-width:0 30px 6px ;
+   border-style: solid;
+   border-color:transparent rgba(255,216,64,0.94) transparent rgba(255,216,64,0.94) ; 
+}
+.percent-sale-off{
+    font-weight: bold;
+    color: #EE4D2D ;
+}
+.product_item_card:hover .Image-Product img{
+    transform: scale(1.1);
+   
+   
+   
+    
+} 
+.product_item_card:hover{
+    border: solid 0.3px rgb(198, 198, 198);
+}
+
+/* group addmin */
+.group-product-admin{
+    padding-left: 290px;
+    background-color: rgba(0,0,0,0.05);
+    overflow: hidden;
+    min-height: 60vh;
+    margin-bottom:2rem ;
+    padding-bottom: 2rem;
+    }
+    .group-product-admin .group-product-admin-title{
+    max-width: 95%;
+    margin: auto;
+    display: flex; 
+    column-gap: 1.5rem;
+    line-height: 10px;
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    }
+    
+    .img_menu_admin_product{
+        width: 50px;
+        height: 50px;
+    }
+    .cl-titleProduct{
+        color: #495974;
+    }
+    .group-product-admin-addProduct-content{
+       
+        width: 95%;
+        background-color: rgba(254, 254, 254, 0.83);
+        box-shadow: 0 1px 6px rgb(226, 224, 227);
+        min-height: 100px;
+        border: solid 0.2px gainsboro;
+        margin: auto;
+        padding: 1rem;
+    }
+    
+    .title_Product_description_adMin{
+        font-size: 1rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #000;
+        margin: auto;
+        font-weight: initial;
+        text-align: center;
+        text-transform: capitalize;
+        transition: 0.2s ease-out;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+    .group-product-admin-addProduct-content{
+        overflow: scroll;
+    }
+@media screen and (max-width:1000px) {
+    .group-product-admin{
+        padding-left: 0px;
+    }
+    .group-product-admin .group-product-admin-title{
+        max-width: 100%;
+        margin: 0px;
+    }
+    .group-product-admin-title{
+        width: 95%;
+        margin: auto;
+      
+        padding: 1.5rem;
+    }
+    
+    }
+    .btInFor_lisProduct{
+        background-color: rgb(37, 140, 249);
+        color: white;
+        font-weight: 500;
+    }
+    
+    .custom-row-hover:hover {
+        background-color: rgb(46, 212, 101);
+      }
+    /* .ant-spin-container .ant-pagination{
+        display: none !important;
+      }   */
+    
+      @media screen and (max-width:1000px) {
+        .group-product-admin-addProduct-content-form{
+          width: 100%;
+          overflow: scroll;
+        } 
+      }
+/* group addmin */
+@media screen and (min-width:1000px) {
+    .active-before{
+        background-color: initial;
+        position: initial;
+       
+    }
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+  outline: none;
+}
+/*
+/*on tap grid
+.list-item-trackline{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px 100px 350px;
+    /* grid-template-rows: 300px 200px;
+    khoang cach giua 2 dong
+    
+    /*tractline
+    /*tractline theo cot so cot cong + 1
+     /*tractline theo dong  so dong cong + 1
+
+}
+.list-item-trackline img:first-child{
+ grid-column:track-line-start/track-line-end 
+      grid-row:track-line-start/track-line-end 
+    track-line-start:so bat dau
+      track-line-end:so ket thuc
+      de item duoc trai dai trong tracline do no trai dai trong item do
+
+      width: 100%;
+      height: 350px;
+
+      grid-column: 1/3;
+grid-row:1/2;
+} 
+
+.list-item-trackline img:last-child{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    width: 100%;
+    height: 350px;
+
+}
+*/
+/* xs<576px
+sm>576px
+md>768px
+lg>992px
+xl>1200px
+xll>1600px
+display:inline;  nội dung tới đâu thì dài tới đó,khi dùng inline không set height và width đc 
+display:inline-block nội dung tới đầu thì hết tới đấy mà mình có thể set chiều cao và chiều rộng được 
+
+display-block:nó sẽ chiếm hết một dòng luôn 
+*/
+/* ctl +shift + l */
+
+/* End */
+
+.app::-webkit-scrollbar-track{
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.app::-webkit-scrollbar{
+    display: none;
+    width: 7px;
+}
+.app:hover::-webkit-scrollbar{
+    display: block;    
+}
+.app::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-image: linear-gradient(-45deg,rgba(25, 23, 23, 0.823), rgb(199, 198, 198));
+}
+
+
+/* 
+
+ title: 'Hãng',
+          dataIndex: 'manufacturer',
+          key: 'manufacturer',
+          width: '20%',
+
+
+          fix lỗi bị lặp lại trên table antd không tự động xóa những dòng còn lại
+            key: 'manufacturer',
+            nếu để 
+            key:key không đc để tên giống nhau nêu giống key vs key sẽ lặp lại 
+*/

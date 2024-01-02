@@ -1,0 +1,52 @@
+.group-show-review .starRating{
+    text-align: center;
+}
+.group-show-review .starRating h2{
+    color: rgb(0, 170, 255);
+    font-weight: 500;
+}
+.group-show-review .starRating  h3{
+    color:rgb(255, 0, 38);
+    font-weight: 500;
+}
+.starRating{
+    margin-bottom: 1.5rem;
+}
+.processRating{
+    display: flex;
+   
+   flex-direction: column;
+  
+   justify-content: center;
+}
+.processInformationItem{
+   max-width: 600px;
+   width: 100%;
+   margin: auto;
+
+   display: grid;
+   grid-template-columns: 10% 70% 20%;
+   gap: 1rem;
+   align-items: center;
+
+}
+.control-start{
+    display: flex !important;
+     justify-self: center;
+    gap: 6px;
+    align-items: center;
+
+}
+.control-start span{
+    margin-top: 4px;
+    font-weight: bold;
+}
+.numberRating{
+    justify-self: end;
+ 
+   
+}
+.titleNumber{
+    font-weight: bold;
+}
+

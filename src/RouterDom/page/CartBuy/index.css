@@ -1,0 +1,81 @@
+.group-cart{
+    padding-left: 290px;
+    width: 100%;
+    
+}
+.cart-buy{
+    width: 95%;
+    margin: auto;
+    background-color: white;
+}
+.form-payment{
+    border: solid 1px rgb(201, 200, 200);
+    border-radius: 4px;
+}
+.priceOneProductCart{
+    color: #fe302e;
+    font-weight: 500;
+    font-family: Georgia;
+    font-size: 24px;
+    font-style: italic;
+ 
+   
+    
+}
+.totalItem{
+    color: #475569;
+    font-weight: 500;
+    font-family: Georgia;
+    
+  
+    font-style: italic;
+}
+.card-total-money{
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 1px 6px rgb(239, 233, 242);
+    border: 1px solid rgb(239, 233, 242);
+    width: 100%;
+    top: 80px;
+    position: sticky;
+    text-align: center;
+}
+
+.vat{
+    font-size: 17px;
+    
+}
+.group-payment-all{
+  
+  min-height: 200px;
+  width: 100%;
+}
+.group-card-responsive{
+    display: grid;
+    grid-template-columns: 70% 25%;
+
+}
+.colorSpinCart{
+    color: white !important;
+}
+
+@media screen and (max-width:1198px) {
+    .group-card-responsive{
+        display: grid;
+        grid-template-columns: 100%;
+    
+    }
+    
+    
+}
+.group-card-responsive{
+  width: 100%;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .group-cart{
+        padding-left: 0px;
+    }
+}
+    

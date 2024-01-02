@@ -1,0 +1,40 @@
+.freeCard{
+   border: solid 0.5px rgba(146, 244, 94, 0.614);
+    background-color: rgba(109, 244, 109, 0.433)
+}
+
+.deal{
+    border: solid 0.5px rgb(255, 3, 3);
+     border-radius: 4px;
+}
+.group-quantity-cart{
+
+    width: 100%;
+    display: flex;
+    
+
+    
+}
+.btn-quantity-cart{
+    padding:0 6px;
+    font-weight: 600;
+    border: none;
+
+
+
+    
+    
+}
+.group-quantity-cart1{
+    border-right: solid 0.5px rgba(74, 74, 74, 0.614);
+}
+.group-quantity-cart2{
+    border-left: solid 0.5px rgba(154, 154, 154, 0.449);
+}
+.btn-quantity-cart:hover{
+
+    border: none;
+}
+.input-quantity-cart{
+    width: 100%;
+}
